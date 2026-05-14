@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_railway_blue">
+
+    <!-- Professional App Bar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            app:navigationIconTint="@color/white"
+            app:title="@string/voice_assistant_label"
+            app:titleTextColor="@color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Context Info Card: Reduces empty space and provides helpful context -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardTrainInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="@color/dark_navy_blue"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="6dp"
+        app:strokeColor="@color/railway_yellow"
+        app:strokeWidth="1.5dp"
+        app:layout_constraintTop_toBottomOf="@id/appBar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/lblCurrentStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/label_current_station"
+                android:textColor="@color/railway_yellow"
+                android:textSize="11sp"
+                android:letterSpacing="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvCurrentStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/dash_placeholder"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lblCurrentStation" />
+
+            <TextView
+                android:id="@+id/lblPlatform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/platform_label"
+                android:textColor="@color/railway_yellow"
+                android:textSize="11sp"
+                android:letterSpacing="0.05"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvPlatform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/double_dash_placeholder"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lblPlatform" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:alpha="0.1"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/tvCurrentStation" />
+
+            <TextView
+                android:id="@+id/lblNextTrain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/label_next_train"
+                android:textColor="@color/railway_yellow"
+                android:textSize="11sp"
+                android:letterSpacing="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divider" />
+
+            <TextView
+                android:id="@+id/tvNextTrain"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="1"
+                android:text="@string/loading"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lblNextTrain" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Main Interaction Area -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/interactionArea"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomActions"
+        app:layout_constraintTop_toBottomOf="@id/cardTrainInfo"
+        app:layout_constraintVertical_bias="0.45">
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="@string/voice_status_tap_to_listen"
+            android:textColor="@color/railway_yellow"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/fabSpeak"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <!-- Pulse Animations -->
+        <View
+            android:id="@+id/pulseOuter"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:alpha="0.15"
+            android:background="@drawable/ic_circle_yellow"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/fabSpeak"
+            app:layout_constraintEnd_toEndOf="@id/fabSpeak"
+            app:layout_constraintStart_toStartOf="@id/fabSpeak"
+            app:layout_constraintTop_toTopOf="@id/fabSpeak" />
+
+        <View
+            android:id="@+id/pulseInner"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:alpha="0.3"
+            android:background="@drawable/ic_circle_yellow"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/fabSpeak"
+            app:layout_constraintEnd_toEndOf="@id/fabSpeak"
+            app:layout_constraintStart_toStartOf="@id/fabSpeak"
+            app:layout_constraintTop_toTopOf="@id/fabSpeak" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabSpeak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/voice_speak_now_label"
+            android:src="@android:drawable/ic_btn_speak_now"
+            app:backgroundTint="@color/railway_yellow"
+            app:fabCustomSize="120dp"
+            app:maxImageSize="64dp"
+            app:rippleColor="@color/white"
+            app:tint="@color/deep_railway_blue"
+            app:elevation="12dp"
+            app:layout_constraintBottom_toTopOf="@id/tvPrompt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvStatus" />
+
+        <TextView
+            android:id="@+id/tvPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/voice_speak_now_label"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:alpha="0.8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fabSpeak" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Balanced Bottom Actions: Side-by-side for a cleaner look -->
+    <LinearLayout
+        android:id="@+id/bottomActions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:paddingHorizontal="24dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRepeat"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/label_repeat"
+            android:textColor="@color/railway_yellow"
+            android:textSize="16sp"
+            app:cornerRadius="16dp"
+            app:icon="@android:drawable/ic_menu_recent_history"
+            app:iconSize="24dp"
+            app:iconTint="@color/railway_yellow"
+            app:strokeColor="@color/railway_yellow"
+            app:strokeWidth="2.5dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStop"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/btn_stop"
+            android:textColor="@color/deep_railway_blue"
+            android:textSize="16sp"
+            app:backgroundTint="@color/railway_yellow"
+            app:cornerRadius="16dp"
+            app:icon="@android:drawable/ic_delete"
+            app:iconSize="24dp"
+            app:iconTint="@color/deep_railway_blue"
+            app:elevation="4dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">नम्मा प्लेटफॉर्म</string>
+    <string name="welcome_label">नमस्ते!</string>
+    <string name="current_station_mysuru">मैसूर जंक्शन</string>
+    <string name="welcome_namma_platform">नम्मा प्लेटफॉर्म में आपका स्वागत है</string>
+
+    <string name="coach_guide_label">कोच विवरण</string>
+    <string name="platform_info_label">प्लेटफ़ॉर्म जानकारी</string>
+    <string name="search_train_label">ट्रेन खोजें</string>
+    <string name="emergency_label">आपातकालीन सहायता</string>
+    <string name="voice_assistant_label">आवाज सहायक</string>
+    <string name="settings_label">भाषा बदलें</string>
+
+    <string name="upcoming_trains_label">आने वाली ट्रेनें</string>
+    <string name="help_me_label">मेरी मदद करो (सुनो)</string>
+
+    <string name="platform_label">प्लेटफ़ॉर्म</string>
+    <string name="arrival_label_header">आगमन</string>
+    <string name="departure_label_header">प्रस्थान</string>
+    <string name="not_available_time">--:--</string>
+    <string name="coach_order_label">कोच ऑर्डर:</string>
+
+    <string name="select_language">भाषा चुनें</string>
+    <string name="kannada">ಕನ್ನಡ (KANNADA)</string>
+    <string name="english">ENGLISH</string>
+    <string name="hindi">हिंदी (HINDI)</string>
+
+    <string name="permissions_needed">अनुमतियों की आवश्यकता है</string>
+    <string name="permission_desc">आवाज घोषणाएं और रीयल-टाइम अपडेट प्रदान करने के लिए हमें अनुमति चाहिए।</string>
+    <string name="allow_permissions">अनुमति दें</string>
+
+    <string name="skip">छोड़ें</string>
+    <string name="next">अगला</string>
+    <string name="get_started">शुरू करें</string>
+    <string name="select_station">स्टेशन चुनें</string>
+
+    <string name="search_hint">यहाँ खोजें</string>
+    <string name="no_results">क्षमा करें, कोई परिणाम नहीं मिला</string>
+
+    <string name="arrival_display">आगमन: %1$s</string>
+    <string name="status_display">स्थिति: %1$s</string>
+    <string name="platform_display">प्लेटफ़ॉर्म: %1$s</string>
+    <string name="train_no_display">ट्रेन नंबर: %1$s</string>
+    <string name="departure_display">प्रस्थान: %1$s</string>
+    <string name="destination_display">गंतव्य: %1$s</string>
+
+    <string name="view_coach_layout">कोच लेआउट देखें</string>
+    <string name="hear_announcement">सुनो</string>
+    <string name="platform_navigation">नेविगेशन</string>
+    <string name="train_details">ट्रेन विवरण</string>
+
+    <string name="platform_number">प्लेटफ़ॉर्म नंबर</string>
+    <string name="coach_position">कोच स्थिति</string>
+    <string name="help_me">मेरी मदद करो</string>
+
+    <string name="coach_layout_title">कोच लेआउट</string>
+    <string name="engine_side_label">← इंजन की ओर</string>
+    <string name="general_guidance_msg">सामान्य प्रवेश के लिए पीले कोचों के पास खड़े हों</string>
+    <string name="btn_speak_kannada">घोषणा सुनें</string>
+    <string name="btn_platform_nav">प्लेटफ़ॉर्म नेविगेशन</string>
+    <string name="btn_back_home">होम पर वापस जाएं</string>
+
+    <string name="train_name_demo">सिद्धगंगा एक्सप्रेस</string>
+    <string name="train_number_demo">12725</string>
+
+    <string name="train_announcement_template">ट्रेन %1$s, नंबर %2$s, प्लेटफॉर्म %3$s पर आ रही है। आगमन का समय %4$s और प्रस्थान का समय %5$s है।</string>
+    <string name="voice_prompt">कृपया ट्रेन नंबर या नाम बताएं। मैं आपकी मदद करूँगा।</string>
+
+    <string name="btn_coach">कोच</string>
+    <string name="btn_listen">सुनो</string>
+    <string name="btn_details">विवरण</string>
+    <string name="label_to">तक: %1$s</string>
+    <string name="label_arr">आगमन: %1$s</string>
+    <string name="label_dep">प्रस्थान: %1$s</string>
+
+    <string name="next_arriving_trains">अगली आने वाली ट्रेनें</string>
+
+    <string name="emergency_confirm_msg">क्या आप वाकई आपातकालीन सहायता शुरू करना चाहते हैं?</string>
+
+    <string name="nav_guide_title">नेविगेशन गाइड</string>
+    <string name="nav_guide_subtitle">अपने प्लेटफॉर्म तक पहुँचने के लिए इन चरणों का पालन करें</string>
+    <string name="nav_step_1">1</string>
+    <string name="nav_step_2">2</string>
+    <string name="nav_step_3">3</string>
+    <string name="nav_entrance">🚪 प्रवेश द्वार</string>
+    <string name="nav_entrance_desc">मुख्य द्वार (गेट नंबर 1) से प्रवेश करें</string>
+    <string name="nav_ticket_counter">🎫 टिकट काउंटर</string>
+    <string name="nav_ticket_desc">सीधे चलें और सामान्य टिकट काउंटरों को पार करें</string>
+    <string name="nav_platform_access">🚉 प्लेटफॉर्म एक्सेस</string>
+    <string name="nav_platform_desc">प्लेटफॉर्म 2/3 तक पहुँचने के लिए ओवरब्रिज लें</string>
+
+    <string name="voice_status_listening">सुन रहा हूँ...</string>
+    <string name="voice_status_processing">प्रक्रिया चल रही है...</string>
+    <string name="voice_status_you_said">आपने कहा: %1$s</string>
+    <string name="voice_status_tap_to_listen">घोषणा सुनने के लिए टैप करें</string>
+    <string name="voice_error_no_found">क्षमा करें, मुझे %1$s के लिए कोई जानकारी नहीं मिली</string>
+    <string name="voice_speak_now_label">अभी बोलें</string>
+
+    <string name="emergency_help_title">आपातकालीन सहायता</string>
+    <string name="emergency_contacts_header">रेलवे आपातकालीन संपर्क</string>
+    <string name="railway_police">रेलवे पुलिस (1512)</string>
+    <string name="medical_help">चिकित्सा सहायता (108)</string>
+    <string name="helpline">हेल्पलाइन (139)</string>
+    <string name="railway_police_desc">रेलवे पुलिस</string>
+    <string name="medical_help_desc">चिकित्सा सहायता</string>
+    <string name="helpline_desc">हेल्पलाइन</string>
+    <string name="btn_stop">बंद करें</string>
+    <string name="select_train_first">कृपया पहले ट्रेन चुनें</string>
+    <string name="train_arrival_announcement">ट्रेन %1$s प्लेटफॉर्म नंबर %2$s पर आएगी।</string>
+
+    <string name="btn_repeat_announcement">🔁 घोषणा दोहराएं</string>
+    <string name="no_announcement_to_repeat">दोहराने के लिए कोई घोषणा नहीं है</string>
+</resources>

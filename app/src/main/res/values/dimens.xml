@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Premium Bottom Navigation Dimensions -->
+    <dimen name="bnv_height">84dp</dimen>
+    <dimen name="bnv_icon_size">22dp</dimen>
+
+    <!-- Accessibility-focused text sizes: Same size to prevent "jumping" -->
+    <dimen name="bnv_active_text_size">13sp</dimen>
+    <dimen name="bnv_inactive_text_size">12sp</dimen>
+
+    <!-- Balanced Spacing: Giving icons room to breathe -->
+    <dimen name="bnv_item_padding_top">14dp</dimen>
+    <dimen name="bnv_item_padding_bottom">16dp</dimen>
+
+    <!-- Refined Active Indicator (M3 Pill) -->
+    <dimen name="bnv_active_indicator_height">34dp</dimen>
+    <dimen name="bnv_active_indicator_width">60dp</dimen>
+</resources>

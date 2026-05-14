@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">ನಮ್ಮ ಪ್ಲಾಟ್‌ಫಾರ್ಮ್</string>
+    <string name="welcome_label">ನಮಸ್ಕಾರ!</string>
+    <string name="current_station_mysuru">ಮೈಸೂರು ಜಂಕ್ಷನ್</string>
+    <string name="welcome_namma_platform">ನಮ್ಮ ಪ್ಲಾಟ್‌ಫಾರ್ಮ್‌ಗೆ ಸ್ವಾಗತ</string>
+
+    <string name="coach_guide_label">ಕೋಚ್ ವಿವರ</string>
+    <string name="platform_info_label">ಪ್ಲಾಟ್‌ಫಾರ್ಮ್ ಮಾಹಿತಿ</string>
+    <string name="search_train_label">ರೈಲು ಹುಡುಕಿ</string>
+    <string name="emergency_label">ತುರ್ತು ಸಹಾಯ</string>
+    <string name="voice_assistant_label">ಧ್ವನಿ ಸಹಾಯಕ</string>
+    <string name="settings_label">ಭಾಷೆ ಬದಲಿಸಿ</string>
+
+    <string name="upcoming_trains_label">ಬರಲಿರುವ ರೈಲುಗಳು</string>
+    <string name="help_me_label">ನಮಗೆ ಸಹಾಯ ಮಾಡಿ (ಕೇಳಿ)</string>
+
+    <string name="platform_label">ಪ್ಲಾಟ್‌ಫಾರ್ಮ್</string>
+    <string name="arrival_label_header">ಆಗಮನ</string>
+    <string name="departure_label_header">ನಿರ್ಗಮನ</string>
+    <string name="not_available_time">--:--</string>
+    <string name="coach_order_label">ಬೋಗಿ ನಿಲ್ಲುವ ಕ್ರಮ:</string>
+
+    <string name="select_language">ಭಾಷೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ</string>
+    <string name="kannada">ಕನ್ನಡ (KANNADA)</string>
+    <string name="english">ENGLISH</string>
+    <string name="hindi">ಹಿಂದಿ (HINDI)</string>
+
+    <string name="permissions_needed">ಅನುಮತಿಗಳು ಅಗತ್ಯವಿದೆ</string>
+    <string name="permission_desc">ಧ್ವನಿ ಘೋಷಣೆಗಳು ಮತ್ತು ನೈಜ-ಸಮಯದ ನವೀಕರಣಗಳನ್ನು ಒದಗಿಸಲು ನಮಗೆ ಅನುಮತಿ ಬೇಕು.</string>
+    <string name="allow_permissions">ಅನುಮತಿ ನೀಡಿ</string>
+
+    <string name="skip">ಬಿಟ್ಟುಬಿಡಿ</string>
+    <string name="next">ಮುಂದೆ</string>
+    <string name="get_started">ಪ್ರಾರಂಭಿಸಿ</string>
+    <string name="select_station">ನಿಲ್ದಾಣವನ್ನು ಆರಿಸಿ</string>
+
+    <string name="search_hint">ಇಲ್ಲಿ ಹುಡುಕಿ</string>
+    <string name="no_results">ಕ್ಷಮಿಸಿ, ಫಲಿತಾಂಶಗಳು ಕಂಡುಬಂದಿಲ್ಲ</string>
+
+    <string name="onboarding_title_1">ನೈಜ-ಸಮಯದ ರೈಲು ಟ್ರ್ಯಾಕಿಂಗ್</string>
+    <string name="onboarding_desc_1">ರೈಲು ಸ್ಥಿತಿ ಮತ್ತು ಪ್ಲಾಟ್‌ಫಾರ್ಮ್ ಸಂಖ್ಯೆಗಳ ಲೈವ್ ಅಪ್‌ಡೇಟ್ ಪಡೆಯಿರಿ.</string>
+    <string name="onboarding_title_2">ಕೋಚ್ ಮಾರ್ಗದರ್ಶನ</string>
+    <string name="onboarding_desc_2">ನಿಮ್ಮ ಕೋಚ್ ಸ್ಥಾನವನ್ನು ಸುಲಭವಾಗಿ ಹುಡುಕಿ.</string>
+    <string name="onboarding_title_3">ಧ್ವನಿ ಸಹಾಯಕ</string>
+    <string name="onboarding_desc_3">ಮಾಹಿತಿಗಾಗಿ ನಮ್ಮ ಧ್ವನಿ ಸಹಾಯಕವನ್ನು ಬಳಸಿ.</string>
+
+    <string name="arrival_label">ಆಗಮನ: %1$s</string>
+    <string name="status_label">ಸ್ಥಿತಿ: %1$s</string>
+    <string name="platform_prefix">ಪ್ಲಾಟ್‌ಫಾರ್ಮ್: %1$s</string>
+    <string name="train_no_prefix">ರೈಲು ಸಂಖ್ಯೆ: %1$s</string>
+    <string name="arrival_display">ಆಗಮನ: %1$s</string>
+    <string name="status_display">ಸ್ಥಿತಿ: %1$s</string>
+    <string name="platform_display">ಪ್ಲಾಟ್‌ಫಾರ್ಮ್: %1$s</string>
+    <string name="train_no_display">ರೈಲು ಸಂಖ್ಯೆ: %1$s</string>
+    <string name="departure_display">ನಿರ್ಗಮನ: %1$s</string>
+    <string name="destination_display">ಗಮ್ಯಸ್ಥಾನ: %1$s</string>
+
+    <string name="view_coach_layout">ಕೋಚ್ ವಿನ್ಯಾಸವನ್ನು ನೋಡಿ</string>
+    <string name="hear_announcement">ಕೇಳಿ</string>
+    <string name="platform_navigation">ನ್ಯಾವಿಗೇಷನ್</string>
+    <string name="train_details">ರೈಲು ವಿವರಗಳು</string>
+
+    <string name="platform_number">ಪ್ಲಾಟ್‌ಫಾರ್ಮ್ ಸಂಖ್ಯೆ</string>
+    <string name="coach_position">ಕೋಚ್ ಸ್ಥಾನ</string>
+    <string name="help_me">ನಮಗೆ ಸಹಾಯ ಮಾಡಿ</string>
+
+    <string name="general_guidance_msg">ಸಾಮಾನ್ಯ ಪ್ರವೇಶಕ್ಕಾಗಿ ಹಳದಿ ಬೋಗಿಗಳ ಹತ್ತಿರ ನಿಲ್ಲಿ</string>
+    <string name="next_arriving_trains">ಮುಂದೆ ಬರಲಿರುವ ರೈಲುಗಳು</string>
+
+    <string name="train_name_demo">ಸಿದ್ಧಗಂಗಾ ಎಕ್ಸ್‌ಪ್ರೆಸ್</string>
+    <string name="train_number_demo">12725</string>
+
+    <string name="train_announcement_template">%1$s, ರೈಲು ಸಂಖ್ಯೆ %2$s, ಪ್ಲಾಟ್‌ಫಾರ್ಮ್ %3$s ಗೆ ಬರುತ್ತಿದೆ. ಆಗಮನದ ಸಮಯ %4$s ಮತ್ತು ನಿರ್ಗಮನದ ಸಮಯ %5$s.</string>
+    <string name="voice_prompt">ದಯವಿಟ್ಟು ರೈಲು ಸಂಖ್ಯೆ ಅಥವಾ ಹೆಸರನ್ನು ತಿಳಿಸಿ. ನಾನು ನಿಮಗೆ ಸಹಾಯ ಮಾಡುತ್ತೇನೆ.</string>
+
+    <string name="btn_coach">ಕೋಚ್</string>
+    <string name="btn_listen">ಕೇಳಿ</string>
+    <string name="btn_details">ವಿವರಗಳು</string>
+    <string name="label_to">ಗೆ: %1$s</string>
+    <string name="label_arr">ಆಗಮನ: %1$s</string>
+    <string name="label_dep">ನಿರ್ಗಮನ: %1$s</string>
+
+    <string name="coach_layout_title">ಕೋಚ್ ಲೇಔಟ್</string>
+    <string name="engine_side_label">← ಎಂಜಿನ್ ಬದಿ</string>
+    <string name="btn_speak_kannada">ಘೋಷಣೆ ಕೇಳಿ</string>
+    <string name="btn_platform_nav">ಪ್ಲಾಟ್‌ಫಾರ್ಮ್ ನ್ಯಾವಿಗೇಶನ್</string>
+    <string name="btn_back_home">ಹೋಮ್‌ಗೆ ಹಿಂತಿರುಗಿ</string>
+
+    <string name="nav_guide_title">ನ್ಯಾವಿಗೇಷನ್ ಗೈಡ್</string>
+    <string name="nav_guide_subtitle">ನಿಮ್ಮ ಪ್ಲಾಟ್‌ಫಾರ್ಮ್ ತಲುಪಲು ಈ ಹಂತಗಳನ್ನು ಅನುಸರಿಸಿ</string>
+    <string name="nav_step_1">1</string>
+    <string name="nav_step_2">2</string>
+    <string name="nav_step_3">3</string>
+    <string name="nav_entrance">🚪 ಪ್ರವೇಶದ್ವಾರ</string>
+    <string name="nav_entrance_desc">ಮುಖ್ಯ ದ್ವಾರದ ಮೂಲಕ ಪ್ರವೇಶಿಸಿ (ಗೇಟ್ ನಂ. 1)</string>
+    <string name="nav_ticket_counter">🎫 ಟಿಕೆಟ್ ಕೌಂಟರ್</string>
+    <string name="nav_ticket_desc">ನೇರವಾಗಿ ನಡೆದು ಸಾಮಾನ್ಯ ಟಿಕೆಟ್ ಕೌಂಟರ್‌ಗಳನ್ನು ದಾಟಿ</string>
+    <string name="nav_platform_access">🚉 ಪ್ಲಾಟ್‌ಫಾರ್ಮ್ ಪ್ರವೇಶ</string>
+    <string name="nav_platform_desc">ಪ್ಲಾಟ್‌ಫಾರ್ಮ್ 2/3 ತಲುಪಲು ಮೇಲ್ಸೇತುವೆಯನ್ನು ಬಳಸಿ</string>
+
+    <string name="emergency_confirm_msg">ನೀವು ಖಚಿತವಾಗಿ ತುರ್ತು ಸಹಾಯವನ್ನು ಪಡೆಯಲು ಬಯಸುವಿರಾ?</string>
+
+    <string name="voice_status_listening">ಕೇಳಿಸಿಕೊಳ್ಳಲಾಗುತ್ತಿದೆ...</string>
+    <string name="voice_status_processing">ಸಂಸ್ಕರಿಸಲಾಗುತ್ತಿದೆ...</string>
+    <string name="voice_status_you_said">ನೀವು ಹೇಳಿದ್ದು: %1$s</string>
+    <string name="voice_status_tap_to_listen">ಘೋಷಣೆಗಳನ್ನು ಕೇಳಲು ಟ್ಯಾಪ್ ಮಾಡಿ</string>
+    <string name="voice_error_no_found">ಕ್ಷಮಿಸಿ, %1$s ಬಗ್ಗೆ ಯಾವುದೇ ಮಾಹಿತಿ ಕಂಡುಬಂದಿಲ್ಲ</string>
+    <string name="voice_speak_now_label">ಈಗ ಮಾತನಾಡಿ</string>
+
+    <string name="emergency_help_title">ತುರ್ತು ಸಹಾಯ</string>
+    <string name="emergency_contacts_header">ರೈಲ್ವೆ ತುರ್ತು ಸಂಪರ್ಕಗಳು</string>
+    <string name="railway_police">ರೈಲ್ವೆ ಪೊಲೀಸ್ (1512)</string>
+    <string name="medical_help">ವೈದ್ಯಕೀಯ ಸಹಾಯ (108)</string>
+    <string name="helpline">ಸಹಾಯವಾಣಿ (139)</string>
+    <string name="railway_police_desc">ರೈಲ್ವೆ ಪೊಲೀಸ್</string>
+    <string name="medical_help_desc">ವೈದ್ಯಕೀಯ ಸಹಾಯ</string>
+    <string name="helpline_desc">ಸಹಾಯವಾಣಿ</string>
+    <string name="btn_stop">ನಿಲ್ಲಿಸಿ</string>
+    <string name="select_train_first">ದಯವಿಟ್ಟು ಮೊದಲು ರೈಲನ್ನು ಆರಿಸಿ</string>
+    <string name="train_arrival_announcement">ರೈಲು %1$s ಪ್ಲಾಟ್‌ಫಾರ್ಮ್ ಸಂಖ್ಯೆ %2$s ಗೆ ಬರಲಿದೆ.</string>
+
+    <string name="btn_repeat_announcement">🔁 ಘೋಷಣೆಯನ್ನು ಪುನರಾವರ್ತಿಸಿ</string>
+    <string name="no_announcement_to_repeat">ಪುನರಾವರ್ತಿಸಲು ಯಾವುದೇ ಘೋಷಣೆ ಇಲ್ಲ</string>
+</resources>

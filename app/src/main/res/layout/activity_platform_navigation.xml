@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/high_contrast_yellow">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/deep_railway_blue"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            app:navigationIconTint="@color/white"
+            app:title="@string/platform_navigation"
+            app:titleTextColor="@color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_guide_title"
+                android:textColor="@color/deep_railway_blue"
+                android:textSize="26sp"
+                android:fontFamily="sans-serif-black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_guide_subtitle"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="32dp"
+                android:alpha="0.8"
+                android:fontFamily="sans-serif-medium" />
+
+            <!-- Visual Route Map Simulation -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Vertical Connector Line -->
+                <View
+                    android:id="@+id/connectorLine"
+                    android:layout_width="4dp"
+                    android:layout_height="0dp"
+                    android:layout_alignTop="@id/step1"
+                    android:layout_alignBottom="@id/step3"
+                    android:layout_marginStart="18dp"
+                    android:background="@color/deep_railway_blue"
+                    android:alpha="0.15" />
+
+                <!-- Step 1 -->
+                <LinearLayout
+                    android:id="@+id/step1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="28dp">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_platform_circle"
+                        android:backgroundTint="@color/deep_railway_blue"
+                        android:gravity="center"
+                        android:text="@string/nav_step_1"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        app:cardBackgroundColor="@color/dark_navy_blue"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="8dp"
+                        app:strokeColor="@color/railway_yellow"
+                        app:strokeWidth="1.2dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/nav_entrance"
+                                android:textColor="@color/white"
+                                android:textSize="18sp"
+                                android:fontFamily="sans-serif-black" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:text="@string/nav_entrance_desc"
+                                android:textColor="@color/railway_yellow"
+                                android:alpha="0.95"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+
+                <!-- Step 2 -->
+                <LinearLayout
+                    android:id="@+id/step2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_below="@id/step1"
+                    android:layout_marginBottom="28dp">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_platform_circle"
+                        android:backgroundTint="@color/deep_railway_blue"
+                        android:gravity="center"
+                        android:text="@string/nav_step_2"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        app:cardBackgroundColor="@color/dark_navy_blue"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="8dp"
+                        app:strokeColor="@color/railway_yellow"
+                        app:strokeWidth="1.2dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/nav_ticket_counter"
+                                android:textColor="@color/white"
+                                android:textSize="18sp"
+                                android:fontFamily="sans-serif-black" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:text="@string/nav_ticket_desc"
+                                android:textColor="@color/railway_yellow"
+                                android:alpha="0.95"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+
+                <!-- Step 3 -->
+                <LinearLayout
+                    android:id="@+id/step3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_below="@id/step2"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_platform_circle"
+                        android:backgroundTint="@color/deep_railway_blue"
+                        android:gravity="center"
+                        android:text="@string/nav_step_3"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        app:cardBackgroundColor="@color/dark_navy_blue"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="8dp"
+                        app:strokeColor="@color/railway_yellow"
+                        app:strokeWidth="1.2dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/nav_platform_access"
+                                android:textColor="@color/white"
+                                android:textSize="18sp"
+                                android:fontFamily="sans-serif-black" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:text="@string/nav_platform_desc"
+                                android:textColor="@color/railway_yellow"
+                                android:alpha="0.95"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

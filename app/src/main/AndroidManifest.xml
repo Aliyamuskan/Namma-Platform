@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nammaplatform.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Namma Platform"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NammaPlatform">
+
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.NammaPlatform">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.OnboardingActivity" />
+        <activity android:name=".activities.LanguageSelectionActivity" />
+        <activity android:name=".activities.PermissionActivity" />
+        <activity android:name=".activities.HomeActivity" />
+        <activity android:name=".activities.StationSelectionActivity" />
+        <activity android:name=".activities.TrainSearchActivity" />
+        <activity android:name=".activities.TrainDetailsActivity" />
+        <activity android:name=".activities.CoachLayoutActivity" />
+        <activity android:name=".activities.VoiceAssistantActivity" />
+        <activity android:name=".activities.PlatformNavigationActivity" />
+        <activity android:name=".activities.StationFacilitiesActivity" />
+        <activity android:name=".activities.EmergencyHelpActivity" />
+        <activity android:name=".activities.FeedbackActivity" />
+        <activity android:name=".activities.SettingsActivity" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name">Namma Platform</string>
+    <string name="welcome_label">Welcome!</string>
+    <string name="current_station_mysuru">Mysuru Junction</string>
+    <string name="welcome_namma_platform">Welcome To Namma Platform</string>
+
+    <string name="coach_guide_label">Coach Guide</string>
+    <string name="platform_info_label">Platform Info</string>
+    <string name="search_train_label">Search Train</string>
+    <string name="emergency_label">Emergency</string>
+    <string name="voice_assistant_label">Voice Assistant</string>
+    <string name="settings_label">Language</string>
+
+    <string name="upcoming_trains_label">Upcoming Trains</string>
+    <string name="help_me_label">HELP ME (LISTEN)</string>
+
+    <string name="platform_label">PLATFORM</string>
+    <string name="arrival_label_header">ARRIVAL</string>
+    <string name="departure_label_header">DEPARTURE</string>
+    <string name="not_available_time">--:--</string>
+    <string name="coach_order_label">Coach Order:</string>
+
+    <string name="select_language">Select Language</string>
+    <string name="kannada">ಕನ್ನಡ (KANNADA)</string>
+    <string name="english">ENGLISH</string>
+    <string name="hindi">हिंदी (HINDI)</string>
+
+    <string name="permissions_needed">Permissions Needed</string>
+    <string name="permission_desc">We need access to Audio and Notifications to provide voice announcements and real-time updates.</string>
+    <string name="allow_permissions">ALLOW</string>
+
+    <string name="skip">SKIP</string>
+    <string name="next">NEXT</string>
+    <string name="get_started">GET STARTED</string>
+    <string name="select_station">Select Station</string>
+
+    <string name="search_hint">Search Train Name or Number</string>
+    <string name="no_results">Sorry, no results found</string>
+
+    <string name="onboarding_title_1">Real-time Train Tracking</string>
+    <string name="onboarding_desc_1">Get live updates of train status and platform numbers.</string>
+    <string name="onboarding_title_2">Coach Guidance</string>
+    <string name="onboarding_desc_2">Find your coach position easily before the train arrives.</string>
+    <string name="onboarding_title_3">Voice Assistant</string>
+    <string name="onboarding_desc_3">Use our voice assistant for information.</string>
+
+    <string name="arrival_label">Arrival: %1$s</string>
+    <string name="status_label">Status: %1$s</string>
+    <string name="platform_prefix">Platform: %1$s</string>
+    <string name="train_no_prefix">Train No: %1$s</string>
+    <string name="view_coach_layout">View Coach Layout</string>
+    <string name="hear_announcement">LISTEN</string>
+    <string name="platform_navigation">Navigation</string>
+    <string name="train_details">Train Details</string>
+
+    <string name="platform_number">Platform Number</string>
+    <string name="coach_position">Coach Position</string>
+    <string name="help_me">HELP ME</string>
+
+    <string name="rate_experience">Rate Your Experience</string>
+    <string name="tell_us_more">Tell us more...</string>
+    <string name="submit_feedback">SUBMIT FEEDBACK</string>
+    <string name="thank_you_feedback">Thank you for your feedback!</string>
+    <string name="please_enter_feedback">Please enter feedback</string>
+
+    <string name="coach_layout_title">Coach Layout</string>
+    <string name="engine_side_label">← Engine Side</string>
+    <string name="general_guidance_msg">Stand Near Yellow Coaches For General Entry</string>
+    <string name="btn_speak_kannada">Speak Announcement</string>
+    <string name="btn_platform_nav">Platform Navigation</string>
+    <string name="btn_back_home">Back to Home</string>
+
+    <string name="train_name_demo">Siddhaganga Exp</string>
+    <string name="train_number_demo">12725</string>
+
+    <string name="train_announcement_template">Train %1$s, Number %2$s, is arriving on platform %3$s. Arrival time %4$s and Departure time %5$s.</string>
+    <string name="voice_prompt">Please say the train number or name. I will help you.</string>
+    <string name="platform_display">Platform: %1$s</string>
+    <string name="arrival_display">Arrival: %1$s</string>
+    <string name="status_display">Status: %1$s</string>
+    <string name="train_no_display">Train No: %1$s</string>
+    <string name="departure_display">Departure: %1$s</string>
+    <string name="destination_display">Destination: %1$s</string>
+
+    <string name="btn_coach">Coach</string>
+    <string name="btn_listen">Listen</string>
+    <string name="btn_details">Details</string>
+    <string name="label_to">TO: %1$s</string>
+    <string name="label_arr">Arr: %1$s</string>
+    <string name="label_dep">Dep: %1$s</string>
+
+    <string name="next_arriving_trains">Next Arriving Trains</string>
+    <string name="splash_subtitle">Namma Platform • Railway Assistant</string>
+    <string name="splash_safe_travels">Safe Travels</string>
+
+    <string name="nav_guide_title">Navigation Guide</string>
+    <string name="nav_guide_subtitle">Follow these steps to reach your platform</string>
+    <string name="nav_step_1">1</string>
+    <string name="nav_step_2">2</string>
+    <string name="nav_step_3">3</string>
+    <string name="nav_entrance">🚪 Entrance</string>
+    <string name="nav_entrance_desc">Enter through the Main Gate (Gate No. 1)</string>
+    <string name="nav_ticket_counter">🎫 Ticket Counter</string>
+    <string name="nav_ticket_desc">Walk straight and pass the general ticket counters</string>
+    <string name="nav_platform_access">🚉 Platform Access</string>
+    <string name="nav_platform_desc">Take the overbridge to reach Platform 2/3</string>
+
+    <string name="emergency_confirm_msg">Are you sure you want to trigger emergency help?</string>
+
+    <string name="voice_status_listening">Listening...</string>
+    <string name="voice_status_processing">Processing...</string>
+    <string name="voice_status_you_said">You said: %1$s</string>
+    <string name="voice_status_tap_to_listen">Tap to listen announcements</string>
+    <string name="voice_error_no_found">Sorry, I couldn\'t find any information for %1$s</string>
+    <string name="voice_speak_now_label">SPEAK NOW</string>
+
+    <string name="emergency_help_title">Emergency Help</string>
+    <string name="emergency_contacts_header">Railway Emergency Contacts</string>
+    <string name="railway_police">Railway Police (1512)</string>
+    <string name="medical_help">Medical Help (108)</string>
+    <string name="helpline">Helpline (139)</string>
+    <string name="railway_police_desc">Railway Police</string>
+    <string name="medical_help_desc">Medical Help</string>
+    <string name="helpline_desc">Helpline</string>
+    <string name="btn_stop">STOP</string>
+    <string name="select_train_first">Please select a train first</string>
+    <string name="train_arrival_announcement">Train %1$s will arrive on platform number %2$s.</string>
+
+    <string name="btn_repeat_announcement">🔁 Repeat Announcement</string>
+    <string name="no_announcement_to_repeat">No announcement to repeat</string>
+
+    <!-- Voice Assistant UI Labels -->
+    <string name="label_current_station">CURRENT STATION</string>
+    <string name="label_next_train">NEXT ARRIVING TRAIN</string>
+    <string name="label_repeat">REPEAT</string>
+    <string name="loading">Loading...</string>
+    <string name="dash_placeholder">---</string>
+    <string name="double_dash_placeholder">--</string>
+</resources>

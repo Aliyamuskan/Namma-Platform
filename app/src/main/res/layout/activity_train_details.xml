@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_railway_blue">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/dark_navy_blue"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            app:navigationIconTint="@color/white"
+            app:title="Train Details"
+            app:titleTextColor="@color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/dark_navy_blue"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp"
+                app:strokeColor="@color/railway_yellow"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <TextView
+                        android:id="@+id/tvTrainName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Siddhaganga Exp"
+                        android:textColor="@color/white"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:id="@+id/tvTrainNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Train No: 12725"
+                        android:textColor="@color/railway_yellow"
+                        android:textSize="18sp"
+                        android:alpha="0.9" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="20dp"
+                        android:background="@color/railway_yellow"
+                        android:alpha="0.3" />
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:columnCount="2"
+                        android:alignmentMode="alignMargins">
+
+                        <!-- Platform -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_columnWeight="1"
+                            android:layout_marginBottom="24dp">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp"
+                                    android:layout_marginEnd="6dp"
+                                    android:src="@android:drawable/ic_menu_mylocation"
+                                    app:tint="@color/railway_yellow" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PLATFORM" android:textColor="@color/railway_yellow" android:textSize="12sp" android:fontFamily="sans-serif-bold" />
+                            </LinearLayout>
+                            <TextView android:id="@+id/tvPlatform" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:background="@drawable/bg_platform_circle" android:backgroundTint="@color/railway_yellow" android:minWidth="44dp" android:minHeight="44dp" android:gravity="center" android:text="2" android:textColor="@color/dark_navy_blue" android:textSize="24sp" android:fontFamily="sans-serif-black" />
+                        </LinearLayout>
+
+                        <!-- Arrival -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_columnWeight="1"
+                            android:gravity="end"
+                            android:layout_marginBottom="24dp">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp"
+                                    android:layout_marginEnd="6dp"
+                                    android:src="@android:drawable/ic_menu_recent_history"
+                                    app:tint="@color/railway_yellow" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ARRIVAL" android:textColor="@color/railway_yellow" android:textSize="12sp" android:fontFamily="sans-serif-bold" />
+                            </LinearLayout>
+                            <TextView android:id="@+id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="5:40 PM" android:textColor="@color/white" android:textSize="24sp" android:fontFamily="sans-serif-black" />
+                        </LinearLayout>
+
+                        <!-- Departure -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_columnWeight="1"
+                            android:layout_marginBottom="24dp">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp"
+                                    android:layout_marginEnd="6dp"
+                                    android:src="@android:drawable/ic_menu_recent_history"
+                                    app:tint="@color/railway_yellow" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DEPARTURE" android:textColor="@color/railway_yellow" android:textSize="12sp" android:fontFamily="sans-serif-bold" />
+                            </LinearLayout>
+                            <TextView android:id="@+id/tvDeparture" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="5:50 PM" android:textColor="@color/white" android:textSize="24sp" android:fontFamily="sans-serif-black" />
+                        </LinearLayout>
+
+                        <!-- Status -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_columnWeight="1"
+                            android:gravity="end"
+                            android:layout_marginBottom="24dp">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="STATUS" android:textColor="@color/railway_yellow" android:textSize="12sp" android:fontFamily="sans-serif-bold" />
+                            <TextView android:id="@+id/tvStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="On Time" android:textColor="@color/status_on_time" android:textSize="20sp" android:fontFamily="sans-serif-black" />
+                        </LinearLayout>
+
+                        <!-- Destination -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_columnWeight="1"
+                            android:layout_columnSpan="2">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp"
+                                    android:layout_marginEnd="6dp"
+                                    android:src="@android:drawable/ic_menu_directions"
+                                    app:tint="@color/railway_yellow" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DESTINATION" android:textColor="@color/railway_yellow" android:textSize="12sp" android:fontFamily="sans-serif-bold" />
+                            </LinearLayout>
+                            <TextView android:id="@+id/tvDest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Dharwad" android:textColor="@color/white" android:textSize="20sp" android:fontFamily="sans-serif-black" />
+                        </LinearLayout>
+                    </GridLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="16dp"
+                android:text="Quick Actions"
+                android:textColor="@color/railway_yellow"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-black" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnHearAnnouncement"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginBottom="16dp"
+                android:text="Hear Announcement"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/dark_navy_blue"
+                app:cornerRadius="16dp"
+                app:icon="@android:drawable/ic_btn_speak_now"
+                app:iconSize="28dp"
+                app:iconTint="@color/dark_navy_blue"
+                app:backgroundTint="@color/railway_yellow"
+                app:rippleColor="@color/white"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnViewCoachLayout"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginBottom="16dp"
+                android:text="View Coach Layout"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/dark_navy_blue"
+                app:cornerRadius="16dp"
+                app:icon="@android:drawable/ic_dialog_map"
+                app:iconSize="28dp"
+                app:iconTint="@color/dark_navy_blue"
+                app:backgroundTint="@color/railway_yellow"
+                app:rippleColor="@color/white"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNavigate"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:text="Platform Navigation"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/railway_yellow"
+                app:cornerRadius="16dp"
+                app:icon="@android:drawable/ic_menu_directions"
+                app:iconSize="28dp"
+                app:iconTint="@color/railway_yellow"
+                app:strokeColor="@color/railway_yellow"
+                app:strokeWidth="2dp"
+                app:rippleColor="@color/white"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

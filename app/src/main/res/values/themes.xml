@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.NammaPlatform" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorContainer">@color/primary_dark</item>
+
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+
+        <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigationView</item>
+    </style>
+
+    <style name="Widget.App.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@color/dark_navy_blue</item>
+
+        <item name="itemIconTint">@color/bnv_tab_item_foreground</item>
+        <item name="itemTextColor">@color/bnv_tab_item_foreground</item>
+        <item name="itemIconSize">@dimen/bnv_icon_size</item>
+        <item name="labelVisibilityMode">labeled</item>
+
+        <!-- Vertical spacing refinement: spacing between icon and text -->
+        <item name="itemIconPadding">10dp</item>
+
+        <item name="itemPaddingTop">@dimen/bnv_item_padding_top</item>
+        <item name="itemPaddingBottom">@dimen/bnv_item_padding_bottom</item>
+
+        <item name="itemTextAppearanceInactive">@style/TextAppearance.App.BottomNormal</item>
+        <item name="itemTextAppearanceActive">@style/TextAppearance.App.BottomSelected</item>
+
+        <!-- Active indicator (M3 pill) styling -->
+        <item name="itemActiveIndicatorStyle">@style/Widget.App.BottomNavigation.ActiveIndicator</item>
+        <item name="itemRippleColor">@color/railway_yellow</item>
+    </style>
+
+    <style name="Widget.App.BottomNavigation.ActiveIndicator" parent="">
+        <item name="android:color">#1AFFFFFF</item> <!-- Subtle light overlay for the active pill -->
+        <item name="android:height">@dimen/bnv_active_indicator_height</item>
+        <item name="android:width">@dimen/bnv_active_indicator_width</item>
+    </style>
+
+    <style name="TextAppearance.App.BottomNormal" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textSize">@dimen/bnv_inactive_text_size</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.03</item>
+        <item name="android:alpha">0.7</item> <!-- Softer inactive labels -->
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextAppearance.App.BottomSelected" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textSize">@dimen/bnv_active_text_size</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/railway_yellow</item>
+    </style>
+</resources>
